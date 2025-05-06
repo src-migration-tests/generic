@@ -1,0 +1,49 @@
+{
+  "service": {
+    "admin_id": 0,
+    "pipelines": {
+      "template": {
+        "steps": [
+          {
+            "name": "step1",
+            "do": "..."
+          },
+          {
+            "name": "step2",
+            "do": "..."
+          }
+        ]
+      },
+      "main-pipeline": {
+        "steps": [
+          {
+            "name": "step1",
+            "do": "..."
+          },
+          {
+            "name": "step2",
+            "do": "..."
+          }
+        ],
+        "env": [
+          {
+            "ITEM": "VALUE"
+          }
+        ]
+      },
+      "custom-pipeline": {
+        "steps": [
+          {
+            "name": "step1",
+            "do": "..."
+          },
+          {
+            "name": "step2",
+            "do": "..."
+          }
+        ],
+        "image": "registry/docker-image-default"
+      }
+    }
+  }
+}
