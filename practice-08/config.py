@@ -1,0 +1,3 @@
+MODE = 'some-mode'
+MAX_NUMBER_OF_USERS = 10
+ADMIN_ID = ...

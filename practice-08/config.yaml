@@ -1,0 +1,20 @@
+service:
+  admin_id: 0
+  
+  pipelines:
+  
+    template: &default-pipeline
+      steps:
+        - name: step1
+          do: ...
+        - name: step2
+          do: ...
+
+    main-pipeline:
+      <<: *default-pipeline
+      env:
+        - ITEM: VALUE
+    
+    custom-pipeline:
+      <<: *default-pipeline
+      image: registry/docker-image-default
